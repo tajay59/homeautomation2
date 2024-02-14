@@ -10,12 +10,10 @@ The Frontend component is tasked with: (1) Provide a User Interface (UI), on a w
 
 # Hardware Setup
 Download and install [Arduino](https://www.arduino.cc/en/software) IDE. Subsequently, install the following Arduino IDE libraries following the tutorial [here](https://support.arduino.cc/hc/en-us/articles/5145457742236-Add-libraries-to-Arduino-IDE):
-1. Adafruit GFX Library by Adafruit
-2. Adafruit ILI9341 by Adafruit
-3. ArduinoJson by Benoît Blanchon
-4. PubSubClient by Nick O’Leary
-5. NewPing by Tim Eckel
-6. esp32 by Espressif Systems, from the Board Manager tab in the Arduino IDE
+
+1. ArduinoJson by Benoît Blanchon
+2. PubSubClient by Nick O’Leary
+3. esp32 by Espressif Systems, from the Board Manager tab in the Arduino IDE
 
 
 
