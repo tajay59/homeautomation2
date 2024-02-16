@@ -1,9 +1,6 @@
 
 #include <SoftwareSerial.h>
 
-#ifndef ARDUINOJSON_H
-#include <ArduinoJson.h>
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,13 +11,13 @@
 //**********ENTER IP ADDRESS OF SERVER******************//
 
 #define HOST_IP     "localhost"       // EDIT HERE IP ADDRESS OF SERVER (YOUR COMPUTER'S IP ADDRESS) 
-#define HOST_PORT   "80"                  // SERVER PORT (BACKEND FLASK API PORT)
-#define route       "api/update"            // LEAVE UNCHANGED 
-#define idNumber    "620012345"             // EDIT HERE WITH YOUR ID NUMBER 
+#define HOST_PORT   "80"              // SERVER PORT (BACKEND FLASK API PORT)
+#define route       "api/update"      // LEAVE UNCHANGED 
+#define idNumber    "620012345"       // EDIT HERE WITH YOUR ID NUMBER 
 
 // WIFI CREDENTIALS
-#define SSID        "YOUR WIFI"      // "REPLACE WITH YOUR WIFI's SSID"   
-#define password    "YOUR PASSWORD"  // "REPLACE WITH YOUR WiFi's PASSWORD" 
+#define SSID        "YOUR WIFI"       // "REPLACE WITH YOUR WIFI's SSID"   
+#define password    "YOUR PASSWORD"   // "REPLACE WITH YOUR WiFi's PASSWORD" 
 
 #define stay        100
  
@@ -53,8 +50,7 @@ void setup(){
   esp.begin(115200); 
   mySerial.begin(9600);   //  OPEN SERIAL COMMUNICATION,SOFTWARE SERIAL, BAUD RATE = 9600.  MODIFY IF NECESSARY.                          
                           //  USED FOR ARDUINO NANO WITH HM-10(PERIPHERAL) TO MOBILE(CENTRAL) COMMUNICATION
-  
-  
+    
   espInit();  
  
 }
