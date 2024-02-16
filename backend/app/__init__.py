@@ -16,5 +16,3 @@ app.config.from_object(Config)
 
 from app import views
 
-# START MQTT CLIENT 
-Mqtt.client.loop_start()
